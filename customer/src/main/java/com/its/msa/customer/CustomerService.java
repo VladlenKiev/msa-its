@@ -31,7 +31,7 @@ public class CustomerService {
         log.info("customer saved: {}", customer);
         //TODO isFraudster
         FraudCheckResponse fraudCheckResponse = restTemplate
-                .getForObject(getFraudServiceUrl() + "/api/v1/fraud-check/{customerId}",
+                .getForObject("http://FRAUD/api/v1/fraud-check/{customerId}",
                 FraudCheckResponse.class, customer.getId());
         if (fraudCheckResponse.isFraudster()) {
             throw new IllegalStateException("It's a fraudster with customerId " + customer.getId());
