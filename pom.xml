@@ -14,6 +14,7 @@
         <module>eureka-server</module>
         <module>api-gw</module>
         <module>notification-amqp</module>
+        <module>amqp</module>
     </modules>
 
     <properties>

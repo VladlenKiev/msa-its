@@ -1,4 +1,4 @@
-package com.its.msa.amqp.config;
+package com.its.msa.amqp;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

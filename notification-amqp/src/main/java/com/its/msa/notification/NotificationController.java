@@ -1,6 +1,6 @@
-package com.its.msa.amqp;
+package com.its.msa.notification;
 
-import com.its.msa.amqp.config.NotificationRequest;
+import com.its.msa.notification.config.NotificationRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.its.msa.amqp.config;
+package com.its.msa.notification.config;
 
 public record NotificationRequest(
         Integer toCustomerId,

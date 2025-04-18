@@ -1,7 +1,7 @@
 package com.its.msa.customer;
 
+import com.its.msa.amqp.RabbitMQMessageProducer;
 import com.its.msa.customer.config.NotificationRequest;
-import com.its.msa.customer.config.RabbitMQMessageProducer;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

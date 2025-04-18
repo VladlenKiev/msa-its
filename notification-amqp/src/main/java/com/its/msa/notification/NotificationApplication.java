@@ -1,12 +1,12 @@
-package com.its.msa.amqp;
+package com.its.msa.notification;
 
-import com.its.msa.amqp.config.RabbitMQMessageProducer;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+        "com.its.msa.amqp",
+        "com.its.msa.notification"
+})
 public class NotificationApplication {
     public static void main(String[] args) {
         SpringApplication.run(NotificationApplication.class, args);

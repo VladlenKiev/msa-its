@@ -1,6 +1,6 @@
-package com.its.msa.amqp;
+package com.its.msa.notification;
 
-import com.its.msa.amqp.config.NotificationRequest;
+import com.its.msa.notification.config.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

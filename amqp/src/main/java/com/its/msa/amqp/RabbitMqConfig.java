@@ -1,4 +1,4 @@
-package com.its.msa.customer.config;
+package com.its.msa.amqp;
 
 
 import lombok.AllArgsConstructor;

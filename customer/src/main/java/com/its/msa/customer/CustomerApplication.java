@@ -6,7 +6,10 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+        "com.its.msa.amqp",
+        "com.its.msa.customer"
+})
 public class CustomerApplication {
 
     public static void main(String[] args) {
