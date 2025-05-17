@@ -3,11 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.its</groupId>
+        <groupId>com.its.msa</groupId>
         <artifactId>msa-its</artifactId>
         <version>1.0</version>
     </parent>
-    <groupId>com.its.msa</groupId>
     <artifactId>customer</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1</version>
@@ -35,6 +34,16 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.its.msa</groupId>
+            <artifactId>amqp</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
