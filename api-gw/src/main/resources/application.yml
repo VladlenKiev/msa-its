@@ -7,7 +7,7 @@ spring:
     gateway:
       routes:
         - id: customer
-          uri: lb://customer
+          uri: lb://CUSTOMER
           predicates:
             - Path=/api/v1/customers/**
         - id: fraud
@@ -23,3 +23,9 @@ eureka:
     register-with-eureka: true
   instance:
      prefer-ip-address: true
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty: DEBUG
+    org.springframework.web.reactive: DEBUG
